@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Customer Service Survey">
+    <title>Customer Service Survey</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Customer Experience Survey</legend>
+
+        <label for="storeNumber">Store Number</label>
+        <select name="storeNumber" id="storeNumber">
+        <option hidden> Select A Store </option>
+        <option value="3109">3109</option>
+        <option value="2421">2421</option>
+        <option value="5357">5357</option>
+        </select>
+        <fieldset>
+            <legend>When you visited</legend>
+
+            <label for="today">Date Visited</label>
+            <input type="date" name="today" id="today" min="2022-01-01" max="2022-12-31">
+            <br>
+            <label for="time">Time</label>
+            <input type="time" name="time" id="time">
+
+        </fieldset>
+        <label for="fullName">Full Name:</label>
+        <input type="fullName" name="fullName" id="fullName" placeholder="Name">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <br>
+        <fieldset>
+            <legend>How would you rate your level of satisfication with your visit?</legend>
+            <input type="radio" name="feeling" id="satisfied" value="satisfied">
+        <label for="satisfied">Satisfied</label>
+        <br>
+        <input type="radio" name="feeling" id="neither satisfied or dissatisfied" value="neither satisfied or dissatisfied">
+        <label for="neither satisfied or dissatisfied">Neither Satisfied or Dissatisfied</label>
+        <br>
+        <input type="radio" name="feeling" id="dissatisfied" value="dissatisfied">
+        <label for="dissatisfied">Dissatisfied</label>
+        </fieldset>
+        <label for="experience">Tell us about your experience:</label>
+        <br>
+        <textarea name="experience" id="experience" cols="20" rows="1"></textarea>
+        <br>
+        <label for="timesVisted">Times visted this month:</label>
+        <br>
+        <textarea name="timesVisted" id="visted" cols="15" rows="1"></textarea>
+        <br>
+        <input type="checkbox" id="agree" name="agree">
+        <label for="agree">Please check the box if you would be willing to be contacted about your experience.</label>
+        <br>
+        <input type="reset">
+        <input type="submit" name="submit" id="submit">
+        
+
+    </fieldset>
+    
+</body>
+</html>
